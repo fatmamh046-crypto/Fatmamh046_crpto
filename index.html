@@ -1,52 +1,59 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>My Personal Website</title>
+    <title>Fatma's Personal Website</title>
 
     <style>
 
     body {
         background-color: #dff6ff;
-        font-family: Arial;
+        font-family: Arial, sans-serif;
         margin: 0;
     }
 
     nav {
-        background-color: darkblue;
+        background-color: #4b0082;
         text-align: center;
-        padding: 15px;
+        padding: 18px;
     }
 
     nav a {
         color: white;
         text-decoration: none;
-        margin: 10px;
+        margin: 8px;
         font-size: 18px;
+        font-weight: bold;
     }
 
-    h1 {
-        color: darkblue;
-        text-align: center;
-    }
-
-    h2 {
-        color: purple;
-        border-bottom: 2px solid purple;
-    }
-
-    p {
-        font-size: 20px;
+    nav a:hover {
+        color: #ffd700;
     }
 
     .card {
         background-color: white;
         width: 80%;
         margin: 30px auto;
-        padding: 20px;
+        padding: 25px;
         border-radius: 15px;
         box-shadow: 0 0 15px gray;
+    }
+
+    h1 {
+        color: darkblue;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    h2 {
+        color: purple;
+        border-bottom: 2px solid purple;
+        padding-bottom: 5px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 1.6;
     }
 
     .profile {
@@ -54,11 +61,13 @@
         width: 200px;
         height: 200px;
         display: block;
-        margin: auto;
+        margin: 20px auto;
+        object-fit: cover;
     }
 
     .project-img {
         width: 300px;
+        max-width: 100%;
         height: 200px;
         border-radius: 10px;
     }
@@ -70,6 +79,38 @@
         color: white;
         border: none;
         border-radius: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: purple;
+    }
+
+    @media (max-width: 600px) {
+
+        nav a {
+            display: inline-block;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        .card {
+            width: 85%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .profile {
+            width: 160px;
+            height: 160px;
+        }
     }
 
     </style>
@@ -88,48 +129,48 @@
 
 <div class="card">
 
-<h1 id="home">Welcome to my personal website</h1>
+    <h1 id="home">Welcome to my personal website</h1>
 
-<p>Hi, I'm Fatma</p>
-<p>أنا فاطمة وأتعلم تصميم صفحات الويب</p>
+    <p>Hi, I'm Fatma</p>
+    <p>أنا فاطمة وأتعلم تصميم صفحات الويب</p>
 
-<h2>My Photo</h2>
-<img class="profile" src="photo.jpg">
+    <h2>My Photo</h2>
+    <img class="profile" src="photo.jpg" alt="Fatma's Photo">
 
-<h2 id="about">About Me</h2>
-<p>I am a mother</p>
-<p>I am learning English</p>
+    <h2 id="about">About Me</h2>
+    <p>I am a mother.</p>
+    <p>I am learning English.</p>
 
-<h2>My Education</h2>
-<p>I am learning and improving my skills</p>
+    <h2>My Education</h2>
+    <p>I am learning and improving my skills.</p>
 
-<h2 id="skills">My Skills</h2>
-<p>I am learning English and web design</p>
+    <h2 id="skills">My Skills</h2>
+    <p>I am learning English and web design.</p>
 
-<h2>Languages</h2>
-<p>Arabic: Native</p>
-<p>English: Learning</p>
+    <h2>Languages</h2>
+    <p>Arabic: Native</p>
+    <p>English: Learning</p>
 
-<h2>My Goals</h2>
-<p>I want to learn more and build my future</p>
+    <h2>My Goals</h2>
+    <p>I want to learn more and build my future.</p>
 
-<h2 id="projects">My Projects</h2>
-<p>My first project is my personal web page</p>
-<p>I am learning how to create websites</p>
+    <h2 id="projects">My Projects</h2>
+    <p>My first project is my personal web page.</p>
+    <p>I am learning how to create websites.</p>
 
-<img class="project-img" src="project.jpg">
+    <img class="project-img" src="project.jpg" alt="My Project">
 
-<h2>My CV</h2>
-<p>My CV will be added soon</p>
+    <h2>My CV</h2>
+    <p>My CV will be added soon.</p>
 
-<h2>Social Media</h2>
-<p>Email: fatmamh046@gmail.com</p>
+    <h2>Social Media</h2>
+    <p>Email: fatmamh046@gmail.com</p>
 
-<h2 id="contact">Contact Me</h2>
+    <h2 id="contact">Contact Me</h2>
 
-<a href="mailto:fatmamh046@gmail.com">
-    <button>Send Email</button>
-</a>
+    <a href="mailto:fatmamh046@gmail.com">
+        <button>Send Email</button>
+    </a>
 
 </div>
 
