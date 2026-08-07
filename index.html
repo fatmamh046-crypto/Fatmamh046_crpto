@@ -1,14 +1,29 @@
+
 <!DOCTYPE html>
 <html>
 
 <head>
-    <title>My Personal Page</title>
+    <title>My Personal Website</title>
 
     <style>
 
     body {
         background-color: #dff6ff;
         font-family: Arial;
+        margin: 0;
+    }
+
+    nav {
+        background-color: darkblue;
+        text-align: center;
+        padding: 15px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 18px;
     }
 
     h1 {
@@ -63,9 +78,17 @@
 
 <body>
 
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
 <div class="card">
 
-<h1>Welcome to my personal page</h1>
+<h1 id="home">Welcome to my personal website</h1>
 
 <p>Hi, I'm Fatma</p>
 <p>أنا فاطمة وأتعلم تصميم صفحات الويب</p>
@@ -73,14 +96,14 @@
 <h2>My Photo</h2>
 <img class="profile" src="photo.jpg">
 
-<h2>About Me</h2>
+<h2 id="about">About Me</h2>
 <p>I am a mother</p>
 <p>I am learning English</p>
 
 <h2>My Education</h2>
 <p>I am learning and improving my skills</p>
 
-<h2>My Skills</h2>
+<h2 id="skills">My Skills</h2>
 <p>I am learning English and web design</p>
 
 <h2>Languages</h2>
@@ -90,7 +113,7 @@
 <h2>My Goals</h2>
 <p>I want to learn more and build my future</p>
 
-<h2>My Projects</h2>
+<h2 id="projects">My Projects</h2>
 <p>My first project is my personal web page</p>
 <p>I am learning how to create websites</p>
 
@@ -99,15 +122,13 @@
 <h2>My CV</h2>
 <p>My CV will be added soon</p>
 
-
-
 <h2>Social Media</h2>
 <p>Email: fatmamh046@gmail.com</p>
 
-<h2>Contact Me</h2>
+<h2 id="contact">Contact Me</h2>
 
 <a href="mailto:fatmamh046@gmail.com">
-<button>Send Email</button>
+    <button>Send Email</button>
 </a>
 
 </div>
