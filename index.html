@@ -2,109 +2,146 @@
 <html>
 
 <head>
-<title>Fatma Personal Page</title>
+    <title>Fatma Personal Page</title>
 
-<style>
+    <style>
 
-body {
-    background: #e6f7ff;
-    font-family: Arial;
-    text-align: center;
-    padding: 20px;
-}
+        body {
+            background: #e6f7ff;
+            font-family: Arial;
+            text-align: center;
+            padding: 20px;
+        }
 
-.menu {
-    background: darkblue;
-    padding: 15px;
-    border-radius: 10px;
-}
+        .menu {
+            background: darkblue;
+            padding: 15px;
+            border-radius: 10px;
+        }
 
-.menu button {
-    background: white;
-    color: darkblue;
-    border: none;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 8px;
-}
+        .menu button {
+            background: white;
+            color: darkblue;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
 
-.header, .box {
-    background: white;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 20px;
-    max-width: 500px;
-}
+        .menu button:hover {
+            background: lightblue;
+        }
 
-h1 {
-    color: darkblue;
-}
+        .header, .box {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 500px;
+        }
 
-h2 {
-    color: purple;
-}
+        h1 {
+            color: darkblue;
+        }
 
-p {
-    font-size: 18px;
-}
+        h2 {
+            color: purple;
+        }
 
-img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-}
+        p {
+            font-size: 18px;
+        }
 
-</style>
+        img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-<div class="menu">
-<button onclick="goToSection('home')">Home</button>
-<button onclick="goToSection('about')">About Me</button>
-<button onclick="goToSection('skills')">Skills</button>
-<button onclick="goToSection('contact')">Contact</button>
-</div>
+    <div class="menu">
+
+        <button onclick="goToSection('home')">
+            Home
+        </button>
+
+        <button onclick="goToSection('about')">
+            About Me
+        </button>
+
+        <button onclick="goToSection('skills')">
+            Skills
+        </button>
+
+        <button onclick="goToSection('contact')">
+            Contact
+        </button>
+
+    </div>
 
 
-<div class="header" id="home">
-<h1>Welcome to my personal page</h1>
-<h2>Hi, I'm Fatma</h2>
-<p>أنا فاطمة وأتعلم تصميم صفحات الويب</p>
-</div>
+    <div class="header" id="home">
+
+        <h1>Welcome to my personal page</h1>
+
+        <h2>Hi, I'm Fatma</h2>
+
+        <p>
+            أنا فاطمة وأتعلم تصميم صفحات الويب
+        </p>
+
+    </div>
 
 
-<div class="box" id="about">
-<h2>About Me</h2>
-<p>I am a mother.</p>
-<p>I am learning English.</p>
-</div>
+    <div class="box" id="about">
+
+        <h2>About Me</h2>
+
+        <p>I am a mother.</p>
+
+        <p>I am learning English.</p>
+
+    </div>
 
 
-<div class="box" id="skills">
-<h2>My Skills</h2>
-<p>English Learning</p>
-<p>Web Design</p>
-</div>
+    <div class="box" id="skills">
+
+        <h2>My Skills</h2>
+
+        <p>English Learning</p>
+
+        <p>Web Design</p>
+
+    </div>
 
 
-<div class="box" id="contact">
-<h2>Contact</h2>
-<p>Email: fatma@example.com</p>
-</div>
+    <div class="box" id="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email: fatma@example.com</p>
+
+    </div>
 
 
-<script>
+    <script>
 
-function goToSection(id) {
-    document.getElementById(id).scrollIntoView({
-        behavior: "smooth"
-    });
-}
+        function goToSection(id) {
 
-</script>
+            document.getElementById(id).scrollIntoView({
+                behavior: "smooth"
+            });
 
+        }
+
+    </script>
 
 </body>
+
 </html>
