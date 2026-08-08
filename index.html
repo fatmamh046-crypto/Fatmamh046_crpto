@@ -7,17 +7,26 @@
 
     <style>
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background: #e6f7ff;
             font-family: Arial;
             text-align: center;
             padding: 20px;
+            margin: 0;
         }
 
         .menu {
             background: darkblue;
             padding: 15px;
-            border-radius: 10px;
+            border-radius: 0 0 10px 10px;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         .menu a {
