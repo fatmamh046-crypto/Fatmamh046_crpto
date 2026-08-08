@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
-    <title>Fatma Personal Page</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fatma Personal Website</title>
 
     <style>
 
@@ -12,44 +17,49 @@
         }
 
         body {
-            background: #e6f7ff;
-            font-family: Arial;
-            text-align: center;
-            padding: 20px;
             margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #e6f7ff;
+            color: #333;
         }
+
+        /* Menu */
 
         .menu {
             background: darkblue;
-            padding: 15px;
-            border-radius: 0 0 10px 10px;
-
+            padding: 12px;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         .menu a {
+            display: inline-block;
             background: white;
             color: darkblue;
             text-decoration: none;
-            display: inline-block;
-            padding: 10px;
+            padding: 10px 14px;
             margin: 5px;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-weight: bold;
         }
 
         .menu a:hover {
             background: lightblue;
         }
 
+        /* Main sections */
+
         .header,
         .box {
             background: white;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 25px;
             border-radius: 20px;
-            max-width: 500px;
+            box-shadow: 0 4px 12px #aaa;
         }
 
         h1 {
@@ -62,19 +72,105 @@
 
         p {
             font-size: 18px;
+            line-height: 1.7;
         }
 
-        img {
-            width: 160px;
-            height: 160px;
+        /* Photo */
+
+        .photo {
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
+            object-fit: cover;
+            margin: 15px;
+            border: 5px solid lightblue;
+        }
+
+        /* Skills */
+
+        .skill {
+            background: #e6f7ff;
+            margin: 12px;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Buttons */
+
+        .button {
+            display: inline-block;
+            background: darkblue;
+            color: white;
+            text-decoration: none;
+            padding: 13px 22px;
+            margin: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: purple;
+        }
+
+        /* Ahmed Website */
+
+        .ahmed {
+            border: 3px solid purple;
+        }
+
+        /* Footer */
+
+        footer {
+            background: darkblue;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 15px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 600px) {
+
+            .menu a {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+
+            .header,
+            .box {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
         }
 
     </style>
 
 </head>
 
+
 <body>
+
+
+    <!-- Menu -->
 
     <div class="menu">
 
@@ -82,55 +178,183 @@
 
         <a href="#about">About Me</a>
 
+        <a href="#education">Education</a>
+
         <a href="#skills">Skills</a>
+
+        <a href="#goals">Goals</a>
+
+        <a href="#ahmed">Ahmed Website</a>
 
         <a href="#contact">Contact</a>
 
     </div>
 
 
+    <!-- Home -->
+
     <div class="header" id="home">
 
-        <h1>Welcome to my personal page</h1>
+        <h1>Welcome to my personal website</h1>
 
-        <h2>Hi, I'm Fatma</h2>
+        <h2>Hi, I'm Fatma ❤️</h2>
 
         <p>
             أنا فاطمة وأتعلم تصميم صفحات الويب
         </p>
 
+        <p>
+            Welcome to my personal website.
+        </p>
+
+        <img
+            class="photo"
+            src="fatma.jpg"
+            alt="Fatma Photo">
+
     </div>
 
+
+    <!-- About Me -->
 
     <div class="box" id="about">
 
         <h2>About Me</h2>
 
-        <p>I am a mother.</p>
+        <p>
+            I am a mother.
+        </p>
 
-        <p>I am learning English.</p>
+        <p>
+            I am learning English.
+        </p>
+
+        <p>
+            I am learning Web Design and creating websites.
+        </p>
 
     </div>
 
+
+    <!-- Education -->
+
+    <div class="box" id="education">
+
+        <h2>My Education</h2>
+
+        <p>
+            I am learning new skills every day.
+        </p>
+
+        <p>
+            I am improving my English and Web Design skills.
+        </p>
+
+    </div>
+
+
+    <!-- Skills -->
 
     <div class="box" id="skills">
 
         <h2>My Skills</h2>
 
-        <p>English Learning</p>
+        <div class="skill">
+            English Learning
+        </div>
 
-        <p>Web Design</p>
+        <div class="skill">
+            HTML
+        </div>
+
+        <div class="skill">
+            CSS
+        </div>
+
+        <div class="skill">
+            Web Design
+        </div>
 
     </div>
 
+
+    <!-- Goals -->
+
+    <div class="box" id="goals">
+
+        <h2>My Goals</h2>
+
+        <p>
+            I want to become a professional Web Designer.
+        </p>
+
+        <p>
+            I want to create websites for people.
+        </p>
+
+        <p>
+            I want to work online in the future.
+        </p>
+
+    </div>
+
+
+    <!-- Ahmed Website -->
+
+    <div class="box ahmed" id="ahmed">
+
+        <h2>Ahmed Website</h2>
+
+        <p>
+            Welcome to Ahmed Website.
+        </p>
+
+        <p>
+            Ahmed's website will be available here.
+        </p>
+
+        <a
+            class="button"
+            href="#"
+            onclick="alert('Ahmed Website link will be added soon ❤️'); return false;">
+            Open Ahmed Website
+        </a>
+
+    </div>
+
+
+    <!-- Contact -->
 
     <div class="box" id="contact">
 
-        <h2>Contact</h2>
+        <h2>Contact Me</h2>
 
-        <p>Email: fatma@example.com</p>
+        <p>
+            You can contact me by email.
+        </p>
+
+        <a
+            class="button"
+            href="mailto:fatma@example.com">
+            Send Me an Email
+        </a>
 
     </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Fatma Personal Website
+        </p>
+
+        <p>
+            Created by Fatma ❤️
+        </p>
+
+    </footer>
 
 
 </body>
